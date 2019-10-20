@@ -91,10 +91,12 @@ class Home extends StatelessWidget {
                   width: 350.0,
                   child: Carousel(
                     images: [
-                      AssetImage(
-                          'assets/images/banners/1.jpg'),
-                     AssetImage(
-                          'assets/images/banners/2.jpg'),
+                      AssetImage('assets/images/1.jpg'),
+                      AssetImage('assets/images/2.jpg'),
+                      AssetImage('assets/images/3.jpg'),
+                      AssetImage('assets/images/4.jpg'),
+                      AssetImage('assets/images/5.jpg'),
+                      AssetImage('assets/images/6.jpg'),
                     ],
                     dotSize: 6.0,
                     dotSpacing: 15.0,
