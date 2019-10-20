@@ -693,6 +693,149 @@ class CSS extends StatelessWidget {
                         ],
                       ),
                     ),
+                    Card(
+                      child: ExpansionTile(
+                        leading: Icon(Icons.star_border),
+                        title: Column(
+                          children: <Widget>[
+                            Text(
+                              'The SAFE Steps',
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                            Text(
+                              'Learn ho to be safe on your workspace',
+                              style: TextStyle(fontSize: 14.0),
+                            ),
+                          ],
+                        ),
+                        children: <Widget>[
+                          Table(
+                            children: [
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '1. Spot the hazards',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '2. Assess the risks',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '3. Fix the problem',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '4. Evaluate the results',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '1. Spot the hazards. \n Hazard is anything that could hurt you or someone else.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '2. Assess the risks. \n Assess the risk mean working out how likely is that the hazard could hurt someone and how badly they could be hurt.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '3. Fix the problem. \n Fixing hazards is the employer\'s responsibility. But you can fix the hazards yourself if it is simple and as long as it will not hurt you.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '4. Evaluate results. \n The evaluation is based on a comparison of specific criteria and indicators related to occupational health and safety management practices.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ],
