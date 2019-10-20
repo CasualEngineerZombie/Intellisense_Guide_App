@@ -992,13 +992,32 @@ class CSS extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(15.0),
                             child: Text(
-                              'A computer is any calculating device that processes data through a series of instruction. This device can be used for personal purpose and business purposes. There are variety of classification of computers namely; mainframe computers, minicomputers or midrange computers, super computers and personal computers. In this information sheet, the topic about your personal computer will be discussed much because this is the focus specifically desktop computer. Personal computer or PC is a type of computer that is intended for only one user at a time. It can be handheld or mobile such as tablet and smartphone. It can be placed on the lap such as laptop or netbook. It can be placed on the desk or under the desk such as desktop computer and tower type computer.\n The computer has two component; hardware and software. The hardware components are the physical parts of the computer, The software components are non-physical; computer programs that made the hardware parts runs and perform such operating system and utility programs. In this sheet, the hardware components of a computer system are much discussed.',
+                              'Difinition and Basic Function of each Part of the Computer System.',
                               style: TextStyle(
                                 fontSize: 16.0,
                                 fontFamily: 'Poppins',
                               ),
                               textAlign: TextAlign.justify,
                             ),
+                          ),
+                          Table(
+                            children: [
+                              TableRow(
+                                children: [
+                                  Padding(
+                            padding: const EdgeInsets.all(15.0),
+                            child: Text(
+                              '1. Power SUpply - Also called as Power System Unit or PSU. The component of the computer that supplies power to other components inside the system unit.',
+                              style: TextStyle(
+                                fontSize: 16.0,
+                                fontFamily: 'Poppins',
+                              ),
+                              textAlign: TextAlign.justify,
+                            ),
+                          ),
+                                ]
+                              ),
+                            ],
                           ),
                         ],
                       ),
