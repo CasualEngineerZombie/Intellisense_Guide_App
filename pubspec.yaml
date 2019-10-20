@@ -65,6 +65,10 @@ flutter:
     - family: Source Code Pro
       fonts:
         - asset: assets/fonts/SourceCodePro-Regular.ttf
+
+    - family: Monserrat
+      fonts:
+        - asset: assets/fonts/Monserrat-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
