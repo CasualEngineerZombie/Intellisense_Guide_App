@@ -68,7 +68,7 @@ flutter:
 
     - family: Monserrat
       fonts:
-        - asset: assets/fonts/Monserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -1,66 +1,323 @@
 import 'package:flutter/material.dart';
 
 class CSS extends StatelessWidget {
+  // final String title;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        // title: Text(title),
         backgroundColor: Colors.white,
         elevation: 0.0,
         iconTheme: IconThemeData(color: Colors.black), //add this line here
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: <Widget>[
-            UserAccountsDrawerHeader(
-              currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage('assets/images/logo.png'),
-              ),
-              accountName: Text('Intellisense Institute of Technology'),
-              accountEmail: Text('Guizo, Mandaue City'),
-            ),
-            ListTile(
-              leading: Icon(Icons.school),
-              title: Text(
-                'About School',
-                style: TextStyle(
-                  fontSize: 18.0,
-                ),
-              ),
-              trailing: Icon(Icons.arrow_right),
-              onTap: () {},
-            ),
-            Divider(),
-            ListTile(
-              leading: Icon(Icons.bookmark),
-              title: Text(
-                'Certificates',
-                style: TextStyle(
-                  fontSize: 18.0,
-                ),
-              ),
-              trailing: Icon(Icons.arrow_right),
-              onTap: () {},
-            ),
-            Divider(),
-            ListTile(
-              leading: Icon(Icons.phone),
-              title: Text(
-                'Contacts',
-                style: TextStyle(
-                  fontSize: 18.0,
-                ),
-              ),
-              trailing: Icon(Icons.arrow_right),
-              onTap: () {},
-            ),
-          ],
-        ),
-      ),
       body: PageView(
         children: <Widget>[
           Container(
+            //1st page
+            //color: Colors.blue,
+            child: ListView(
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Text(
+                        'Competencies',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5.0,
+                      width: 150,
+                      child: Divider(
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+                Card(
+                  //basic competency
+                  child: ExpansionTile(
+                    initiallyExpanded: true,
+                    leading: Icon(Icons.label_important),
+                    title: Column(
+                      children: <Widget>[
+                        Text(
+                          'Basic Competencies',
+                          style: TextStyle(fontSize: 20.0),
+                        ),
+                      ],
+                    ),
+                    children: <Widget>[
+                      Table(
+                        children: [
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '1. Particpate in workplace communications.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '2. Work in a team environment.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '3. Practice career professionalism.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '4. Practice occupational health and safety procedures.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Card(
+                  //common competency
+                  child: ExpansionTile(
+                    leading: Icon(Icons.label_important),
+                    title: Column(
+                      children: <Widget>[
+                        Text(
+                          'Common Competencies',
+                          style: TextStyle(fontSize: 20.0),
+                        ),
+                      ],
+                    ),
+                    children: <Widget>[
+                      Table(
+                        children: [
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '1. Apply quality standards.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '2. Perform computer operations.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '3. Prepare and interpret technical drawing.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '4. Use hand tools.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '5. Terminate and connect electrical wiring and electronics circuit.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '6. Test electronic components.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Card(
+                  //Core competency
+                  child: ExpansionTile(
+                    leading: Icon(Icons.label_important),
+                    title: Column(
+                      children: <Widget>[
+                        Text(
+                          'Core Competencies',
+                          style: TextStyle(fontSize: 20.0),
+                        ),
+                      ],
+                    ),
+                    children: <Widget>[
+                      Table(
+                        children: [
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '1. Install and configure computer systems.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '2. Set-up computer networks.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '3. Set-up computer servers.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Text(
+                                  '4. Maintain and repair computer systems and networks.',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Poppins',
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            //2nd page
             child: ListView(
               children: <Widget>[
                 Column(
@@ -108,7 +365,7 @@ class CSS extends StatelessWidget {
                                 ),
                                 textAlign: TextAlign.justify,
                               ),
-                            )
+                            ),
                           ],
                         ),
                         TableRow(
@@ -211,7 +468,7 @@ class CSS extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 16.0,
                                 fontFamily: 'Poppins',
-                              ),                                                                         
+                              ),
                               textAlign: TextAlign.justify,
                             ),
                           ),
@@ -222,9 +479,6 @@ class CSS extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-          Container(
-            color: Colors.blue,
           ),
           Container(
             color: Colors.yellow,
