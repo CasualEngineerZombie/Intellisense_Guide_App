@@ -56,12 +56,7 @@ class Learn extends StatelessWidget {
                 ),
               ),
               trailing: Icon(Icons.arrow_right),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => CCS()),
-                );
-              },
+              onTap: (){},
             ),
           ],
         ),
@@ -97,7 +92,12 @@ class Learn extends StatelessWidget {
             color: Colors.teal,
             child: InkWell(
               splashColor: Colors.green,
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CCS()),
+                );
+              },
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Container(
