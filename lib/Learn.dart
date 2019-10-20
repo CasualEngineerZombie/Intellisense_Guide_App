@@ -95,7 +95,7 @@ class Learn extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => CCS()),
+                  MaterialPageRoute(builder: (context) => CSS()),
                 );
               },
               child: Padding(
@@ -150,7 +150,7 @@ class Learn extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => CSS()),
+                  MaterialPageRoute(builder: (context) => CCS()),
                 );
               },
               child: Padding(
