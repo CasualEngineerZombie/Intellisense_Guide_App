@@ -461,16 +461,234 @@ class CSS extends StatelessWidget {
                           ],
                         ),
                         children: <Widget>[
-                          Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Text(
-                              'Occupational Health and Safety (OHS) is a planned system of working to prevent illness and injury where you work by recognizing and identifying hazards and risks. Health and Safety procedure is the responsibility of all persons in the computer and technology industries. You must identify the hazards where you are working and decide how dangerous they are.',
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontFamily: 'Poppins',
+                          Table(
+                            children: [
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '1. Read and follow instruction on the manual carefully.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
                               ),
-                              textAlign: TextAlign.justify,
-                            ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '2. Do not work alone so that there is someone who can take care of you in case of accident or emergency.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '3. Always power off and unplugged the computer before working on it.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '4. Take off any metal objects on your arms or fingers such as bracelets, rings and watches. Even if your unit is unplugged, there may still be some remaining electric charge.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '5. Always ground or discharge yourself before touching any part of the computer (such as the computer casing) and make sure your hands are completely dry to avoid damaging any mechanical parts, as well as to avoid electricution.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '6. Be careful with the tools which may cause short circuit (such us screw driver).',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '7. Handle all parts with care, place each piece you remove carefully down onto a stable surface. If a component does not come out easily, do not use excessive force, if things don\'t quite slip into place or when you\'re removing it. Instead, check if you are remocing it correctly and no wires still connected to the hardware.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '8. Always pull the cable connector on the handle and not on the cable itself.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '9. Be sure you\'re standing on a dry place and use only rubber shoes when standing on the ground or in a concrete floor.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      'Make sure that the pins are properly aligned when connecting a cable connector.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '11. Take away any liquid such us mineral water or softdrinks near your working area or near computers. The three of the most damaging things to a computer are moisture (sweat, drinking water), shock (electric or from being dropped), dust (any debris from household dust to bits of food).',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '12. Personal protective equipment is correctly used in accordance to oragnization OHS procedures and practice.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '13. Hazard/risks in the workplace and their corresponding indicators are identified to minimize or eliminate risk to co-workers, workplace and environment.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '14. Take necessary precautions to protect the component of the computers from damaged cause by Electrostatic Discharge (ESD).',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: Text(
+                                      '15. Hold the components by edges and do not touch the ICs.',
+                                      style: TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         ],
                       ),
