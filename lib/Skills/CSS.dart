@@ -939,8 +939,9 @@ class CSS extends StatelessWidget {
                         ),
                       ],
                     ),
-                    ExpansionTile(
-                        leading: Icon(Icons.star_border),
+                    Card(
+                      child: ExpansionTile(
+                        leading: Icon(Icons.computer),
                         title: Column(
                           children: <Widget>[
                             Text(
@@ -967,6 +968,7 @@ class CSS extends StatelessWidget {
                           ),
                         ],
                       ),
+                    ),
                   ],
                 ),
               ],
