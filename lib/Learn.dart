@@ -112,7 +112,7 @@ class Learn extends StatelessWidget {
                       Text(
                         'Prepared by IIT Instructor for CSS',
                         style: TextStyle(
-                           // fontFamily: 'Poppins',
+                            // fontFamily: 'Poppins',
                             fontSize: 16.0,
                             color: Colors.white),
                       ),
@@ -120,11 +120,62 @@ class Learn extends StatelessWidget {
                         height: 20.0,
                       ),
                       Text(
-                        'Computer Systems Servicing NCII',
+                        'LEARN NOW',
+                        style: TextStyle(
+                          fontFamily: 'Monserrat',
+                          fontSize: 27.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+           Card(
+            color: Colors.deepPurple,
+            child: InkWell(
+              splashColor: Colors.purpleAccent,
+              onTap: () {},
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Container(
+                  width: 250,
+                  height: 150,
+                  child: Column(
+                    children: <Widget>[
+                      Icon(
+                        Icons.headset_mic,
+                        color: Colors.white,
+                        size: 50.0,
+                      ),
+                      Text(
+                        'Contact Center Services NCII',
                         style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 22.0,
                             color: Colors.white),
+                      ),
+                      Text(
+                        'Prepared by IIT Instructor for CCS',
+                        style: TextStyle(
+                            // fontFamily: 'Poppins',
+                            fontSize: 16.0,
+                            color: Colors.white),
+                      ),
+                      SizedBox(
+                        height: 20.0,
+                      ),
+                      Text(
+                        'LEARN NOW',
+                        style: TextStyle(
+                          fontFamily: 'Monserrat',
+                          fontSize: 27.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
