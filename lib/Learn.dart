@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'Skills/CCS.dart';
+import 'Skills/CSS.dart';
+
 class Learn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -53,7 +56,12 @@ class Learn extends StatelessWidget {
                 ),
               ),
               trailing: Icon(Icons.arrow_right),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CCS()),
+                );
+              },
             ),
           ],
         ),
@@ -134,11 +142,17 @@ class Learn extends StatelessWidget {
               ),
             ),
           ),
-           Card(
+          Card(
             color: Colors.deepPurple,
             child: InkWell(
               splashColor: Colors.purpleAccent,
-              onTap: () {},
+              // Within the `FirstRoute` widget
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CSS()),
+                );
+              },
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Container(
