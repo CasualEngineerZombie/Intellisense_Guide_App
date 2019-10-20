@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
+import 'About.dart';
+
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,13 @@ class Home extends StatelessWidget {
                 ),
               ),
               trailing: Icon(Icons.arrow_right),
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => About()),
+                );
+              },
             ),
             Divider(),
             ListTile(
@@ -213,7 +221,8 @@ class Home extends StatelessWidget {
                           child: Text(
                             'HERE @IIT!',
                             style: TextStyle(
-                                fontFamily: 'Poppins', fontSize: 20.0), textAlign: TextAlign.center,
+                                fontFamily: 'Poppins', fontSize: 20.0),
+                            textAlign: TextAlign.center,
                           ),
                         ),
                       ],
