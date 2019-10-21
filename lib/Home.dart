@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'About.dart';
+import 'Contact.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -42,16 +44,18 @@ class Home extends StatelessWidget {
             ),
             Divider(),
             ListTile(
-              leading: Icon(Icons.bookmark),
-              title: Text(
-                'Certificates',
-                style: TextStyle(
-                  fontSize: 18.0,
+                leading: Icon(Icons.code),
+                title: Text(
+                  'Code on Github',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                  ),
                 ),
-              ),
-              trailing: Icon(Icons.arrow_right),
-              onTap: () {},
-            ),
+                trailing: Icon(Icons.arrow_right),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  launch('https://github.com/CodePhilanthropist/Intellisense_Guide_App');
+                }),
             Divider(),
             ListTile(
               leading: Icon(Icons.phone),
@@ -62,7 +66,13 @@ class Home extends StatelessWidget {
                 ),
               ),
               trailing: Icon(Icons.arrow_right),
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Contact()),
+                );
+              },
             ),
           ],
         ),

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'About.dart';
+import 'Contact.dart';
+
+import 'package:url_launcher/url_launcher.dart';
 
 class Quiz extends StatelessWidget {
   @override
@@ -10,53 +14,67 @@ class Quiz extends StatelessWidget {
           iconTheme: IconThemeData(color: Colors.black), //add this line here
         ),
         drawer: Drawer(
-          child: ListView(
-            children: <Widget>[
-              UserAccountsDrawerHeader(
-                currentAccountPicture: CircleAvatar(
-                  backgroundImage: AssetImage('assets/images/logo.png'),
-                ),
-                accountName: Text('Intellisense Institute of Technology'),
-                accountEmail: Text('Guizo, Mandaue City'),
+        child: ListView(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/logo.png'),
               ),
-              ListTile(
-                leading: Icon(Icons.school),
+              accountName: Text('Intellisense Institute of Technology'),
+              accountEmail: Text('Guizo, Mandaue City'),
+            ),
+            ListTile(
+              leading: Icon(Icons.school),
+              title: Text(
+                'About School',
+                style: TextStyle(
+                  fontSize: 18.0,
+                ),
+              ),
+              trailing: Icon(Icons.arrow_right),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => About()),
+                );
+              },
+            ),
+            Divider(),
+            ListTile(
+                leading: Icon(Icons.code),
                 title: Text(
-                  'About School',
+                  'Code on Github',
                   style: TextStyle(
                     fontSize: 18.0,
                   ),
                 ),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
-              ),
-              Divider(),
-              ListTile(
-                leading: Icon(Icons.bookmark),
-                title: Text(
-                  'Certificates',
-                  style: TextStyle(
-                    fontSize: 18.0,
-                  ),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  launch('https://github.com/CodePhilanthropist/Intellisense_Guide_App');
+                }),
+            Divider(),
+            ListTile(
+              leading: Icon(Icons.phone),
+              title: Text(
+                'Contacts',
+                style: TextStyle(
+                  fontSize: 18.0,
                 ),
-                trailing: Icon(Icons.arrow_right),
-                onTap: () {},
               ),
-              Divider(),
-              ListTile(
-                leading: Icon(Icons.phone),
-                title: Text(
-                  'Contacts',
-                  style: TextStyle(
-                    fontSize: 18.0,
-                  ),
-                ),
-                trailing: Icon(Icons.arrow_right),
-                onTap: () {},
-              ),
-            ],
-          ),
+              trailing: Icon(Icons.arrow_right),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Contact()),
+                );
+              },
+            ),
+          ],
         ),
+      ),
         body: Column(
           children: <Widget>[
             CircleAvatar(

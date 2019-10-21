@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 import 'Skills/CCS.dart';
 import 'Skills/CSS.dart';
 
+import 'About.dart';
+import 'Contact.dart';
+
+import 'package:url_launcher/url_launcher.dart';
+
 class Learn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -32,20 +37,29 @@ class Learn extends StatelessWidget {
                 ),
               ),
               trailing: Icon(Icons.arrow_right),
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => About()),
+                );
+              },
             ),
             Divider(),
             ListTile(
-              leading: Icon(Icons.bookmark),
-              title: Text(
-                'Certificates',
-                style: TextStyle(
-                  fontSize: 18.0,
+                leading: Icon(Icons.code),
+                title: Text(
+                  'Code on Github',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                  ),
                 ),
-              ),
-              trailing: Icon(Icons.arrow_right),
-              onTap: () {},
-            ),
+                trailing: Icon(Icons.arrow_right),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  launch(
+                      'https://github.com/CodePhilanthropist/Intellisense_Guide_App');
+                }),
             Divider(),
             ListTile(
               leading: Icon(Icons.phone),
@@ -56,7 +70,13 @@ class Learn extends StatelessWidget {
                 ),
               ),
               trailing: Icon(Icons.arrow_right),
-              onTap: (){},
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Contact()),
+                );
+              },
             ),
           ],
         ),
